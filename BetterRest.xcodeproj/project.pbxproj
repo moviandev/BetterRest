@@ -7,22 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB6D7077297DE21000237E29 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BB6D7076297DE21000237E29 /* SleepCalculator.mlmodel */; };
 		BBD2FC30297CCAEF000606EB /* BetterRestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD2FC2F297CCAEF000606EB /* BetterRestApp.swift */; };
 		BBD2FC32297CCAEF000606EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD2FC31297CCAEF000606EB /* ContentView.swift */; };
 		BBD2FC34297CCAF0000606EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBD2FC33297CCAF0000606EB /* Assets.xcassets */; };
 		BBD2FC37297CCAF0000606EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBD2FC36297CCAF0000606EB /* Preview Assets.xcassets */; };
-		BBD2FC3F297CCB5D000606EB /* BetterRest.csv in Resources */ = {isa = PBXBuildFile; fileRef = BBD2FC3D297CCB5D000606EB /* BetterRest.csv */; };
-		BBD2FC40297CCB5D000606EB /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BBD2FC3E297CCB5D000606EB /* SleepCalculator.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB6D7076297DE21000237E29 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = SOURCE_ROOT; };
 		BBD2FC2C297CCAEF000606EB /* BetterRest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterRest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD2FC2F297CCAEF000606EB /* BetterRestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterRestApp.swift; sourceTree = "<group>"; };
 		BBD2FC31297CCAEF000606EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BBD2FC33297CCAF0000606EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBD2FC36297CCAF0000606EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BBD2FC3D297CCB5D000606EB /* BetterRest.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BetterRest.csv; path = "../../../../../../Downloads/HackingWithSwift-main/SwiftUI/project4-files/BetterRest.csv"; sourceTree = "<group>"; };
-		BBD2FC3E297CCB5D000606EB /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = SleepCalculator.mlmodel; path = "../../../../../../Downloads/HackingWithSwift-main/SwiftUI/project4-files/SleepCalculator.mlmodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +55,8 @@
 			children = (
 				BBD2FC2F297CCAEF000606EB /* BetterRestApp.swift */,
 				BBD2FC31297CCAEF000606EB /* ContentView.swift */,
+				BB6D7076297DE21000237E29 /* SleepCalculator.mlmodel */,
 				BBD2FC33297CCAF0000606EB /* Assets.xcassets */,
-				BBD2FC3D297CCB5D000606EB /* BetterRest.csv */,
-				BBD2FC3E297CCB5D000606EB /* SleepCalculator.mlmodel */,
 				BBD2FC35297CCAF0000606EB /* Preview Content */,
 			);
 			path = BetterRest;
@@ -132,7 +129,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBD2FC37297CCAF0000606EB /* Preview Assets.xcassets in Resources */,
-				BBD2FC3F297CCB5D000606EB /* BetterRest.csv in Resources */,
 				BBD2FC34297CCAF0000606EB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,8 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB6D7077297DE21000237E29 /* SleepCalculator.mlmodel in Sources */,
 				BBD2FC32297CCAEF000606EB /* ContentView.swift in Sources */,
-				BBD2FC40297CCB5D000606EB /* SleepCalculator.mlmodel in Sources */,
 				BBD2FC30297CCAEF000606EB /* BetterRestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
