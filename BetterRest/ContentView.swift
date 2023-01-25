@@ -13,9 +13,9 @@ struct ContentView: View {
     @State private var sleepAmount: Double = 4
     @State private var coffeeAmount = 1
     
-    @State private var alertTitle = ""
-    @State private var alertMessage = ""
-    @State private var showingAlert = false
+    var idealBedTime: String {
+        calculateBedTime()
+    }
     
     static var defaultWakeTime: Date {
         var compoenents = DateComponents()
@@ -53,21 +53,26 @@ struct ContentView: View {
                     Text("Daily coffee intake")
                         .font(.body)
                 }
+                
+                Section {
+                    Text(idealBedTime)
+                        .font(.body)
+                    
+
+                } header: {
+                    Text("Your Ideal bedtime")
+                        .font(.body)
+                }
+                
             }
             .navigationTitle("BetterRest")
-            .toolbar {
-                Button("Calculate", action: calculateBedTime)
-            }
-            .alert(alertTitle, isPresented: $showingAlert) {
-                Button("Ok") { }
-            } message: {
-                Text(alertMessage)
-            }
         }
     }
     
-    func calculateBedTime() {
+    func calculateBedTime() -> String {
+         var idealBedTime = ""
         do {
+
             let config = MLModelConfiguration()
             let model = try SleepCalculator(configuration: config)
             
@@ -79,14 +84,13 @@ struct ContentView: View {
             
             let sleepTime = wakeUp - prediction.actualSleep
             
-            alertTitle = "Your ideal  bed time is..."
-            alertMessage = sleepTime.formatted(date: .omitted, time: .shortened)
+            idealBedTime = "\(sleepTime.formatted(date: .omitted, time: .shortened))"
+
         } catch {
-            alertTitle = "Error"
-            alertMessage = "Sorry, there was a problem calculating your bed time"
+            idealBedTime = "Error calulating your ideal bedtime"
         }
         
-        showingAlert = true
+        return idealBedTime
     }
 }
 
